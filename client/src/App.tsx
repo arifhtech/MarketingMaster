@@ -1,0 +1,47 @@
+import { Switch, Route } from "wouter";
+import { queryClient } from "./lib/queryClient";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import NotFound from "@/pages/not-found";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import ServicePage from "./pages/ServicePage";
+import CaseStudies from "./pages/CaseStudies";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import BlogPost from "./pages/BlogPost";
+import CaseStudyDetail from "./pages/CaseStudyDetail";
+
+function Router() {
+  return (
+    <>
+      <Navbar />
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/services/:slug" component={ServicePage} />
+        <Route path="/case-studies" component={CaseStudies} />
+        <Route path="/case-studies/:id" component={CaseStudyDetail} />
+        <Route path="/blog" component={Blog} />
+        <Route path="/blog/:id" component={BlogPost} />
+        <Route path="/contact" component={Contact} />
+        <Route component={NotFound} />
+      </Switch>
+      <Footer />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Router />
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
+
+export default App;
