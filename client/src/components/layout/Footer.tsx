@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { services } from "@/data/services";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import danitumLogo from "@assets/DANITUM TECHNOLOGIES LOGO PDF_page-0001.jpg";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -33,23 +34,23 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <Link href="/" className="text-2xl font-bold text-white mb-6 block">
-              NexGen<span className="text-primary">Solutions</span>
-            </Link>
+            <div className="mb-6">
+              <img src={danitumLogo} alt="Danitum Technologies" className="h-16" />
+            </div>
             <p className="text-gray-400 mb-6">
-              Building smarter software solutions for tomorrow's businesses.
+              Transforming ambitious ideas into impactful digital solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 hover:text-primary transition">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 hover:text-primary transition">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 hover:text-primary transition">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 hover:text-primary transition">
                 <i className="fab fa-github"></i>
               </a>
             </div>
@@ -62,7 +63,7 @@ const Footer = () => {
                 <li key={service.slug}>
                   <Link 
                     href={`/services/${service.slug}`} 
-                    className="text-gray-400 hover:text-white transition"
+                    className="text-gray-400 hover:text-primary transition"
                   >
                     {service.title}
                   </Link>
@@ -75,32 +76,32 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6">Company</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition">
+                <Link href="/about" className="text-gray-400 hover:text-primary transition">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/case-studies" className="text-gray-400 hover:text-white transition">
+                <Link href="/case-studies" className="text-gray-400 hover:text-primary transition">
                   Case Studies
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white transition">
+                <Link href="/blog" className="text-gray-400 hover:text-primary transition">
                   Blog & Insights
                 </Link>
               </li>
               <li>
-                <Link href="/#" className="text-gray-400 hover:text-white transition">
+                <Link href="/#" className="text-gray-400 hover:text-primary transition">
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/#" className="text-gray-400 hover:text-white transition">
+                <Link href="/#" className="text-gray-400 hover:text-primary transition">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/#" className="text-gray-400 hover:text-white transition">
+                <Link href="/#" className="text-gray-400 hover:text-primary transition">
                   Terms of Service
                 </Link>
               </li>
@@ -108,10 +109,23 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-bold mb-6">Newsletter</h4>
-            <p className="text-gray-400 mb-4">
-              Subscribe to our newsletter for the latest updates and insights.
-            </p>
+            <h4 className="text-lg font-bold mb-6">Contact Us</h4>
+            <ul className="space-y-3 text-gray-400 mb-6">
+              <li className="flex items-start">
+                <i className="fas fa-map-marker-alt mt-1 mr-3"></i>
+                <span>Office 178/206 Sanquelim - Goa, 403505</span>
+              </li>
+              <li className="flex items-center">
+                <i className="fas fa-phone mr-3"></i>
+                <span>+91 1234567890</span>
+              </li>
+              <li className="flex items-center">
+                <i className="fas fa-envelope mr-3"></i>
+                <span>info@danitum.com</span>
+              </li>
+            </ul>
+            
+            <h4 className="text-lg font-bold mb-4">Newsletter</h4>
             <form className="space-y-3" onSubmit={handleSubmit}>
               <div>
                 <input 
@@ -135,16 +149,16 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} NexGen Solutions. All rights reserved.
+              © {new Date().getFullYear()} Danitum Technologies Pvt Ltd. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/#" className="text-gray-400 hover:text-white text-sm transition">
+              <Link href="/#" className="text-gray-400 hover:text-primary text-sm transition">
                 Privacy Policy
               </Link>
-              <Link href="/#" className="text-gray-400 hover:text-white text-sm transition">
+              <Link href="/#" className="text-gray-400 hover:text-primary text-sm transition">
                 Terms of Service
               </Link>
-              <Link href="/#" className="text-gray-400 hover:text-white text-sm transition">
+              <Link href="/#" className="text-gray-400 hover:text-primary text-sm transition">
                 Sitemap
               </Link>
             </div>

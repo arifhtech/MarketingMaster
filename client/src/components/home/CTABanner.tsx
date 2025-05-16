@@ -71,6 +71,11 @@ const CTABanner = () => {
               View Our Work
             </Link>
           </div>
+          
+          <div className="mt-16 text-white/80 text-sm">
+            <p>Danitum Technologies Pvt Ltd</p>
+            <p>Office 178/206 Sanquelim - Goa, 403505</p>
+          </div>
         </div>
       </div>
     </section>

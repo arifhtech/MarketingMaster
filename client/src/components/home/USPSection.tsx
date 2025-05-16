@@ -93,12 +93,12 @@ const USPSection = () => {
           
           {/* USP 4 */}
           <div 
-            className={`bg-white rounded-2xl shadow-lg p-8 border-t-4 border-indigo-500 transform transition-all duration-700 delay-300 ${
+            className={`bg-white rounded-2xl shadow-lg p-8 border-t-4 border-primary transform transition-all duration-700 delay-300 ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             } md:col-span-2 lg:col-span-1`}
           >
-            <div className="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
-              <i className="fas fa-chart-line text-2xl text-indigo-500"></i>
+            <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+              <i className="fas fa-chart-line text-2xl text-primary"></i>
             </div>
             <h3 className="text-xl font-bold mb-3">Results, Not Just Deliverables</h3>
             <p className="text-gray-600">
@@ -109,12 +109,12 @@ const USPSection = () => {
           
           {/* USP 5 */}
           <div 
-            className={`bg-white rounded-2xl shadow-lg p-8 border-t-4 border-amber-500 transform transition-all duration-700 delay-500 ${
+            className={`bg-white rounded-2xl shadow-lg p-8 border-t-4 border-secondary transform transition-all duration-700 delay-500 ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             } md:col-span-2 lg:col-span-2`}
           >
-            <div className="w-16 h-16 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
-              <i className="fas fa-handshake text-2xl text-amber-500"></i>
+            <div className="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+              <i className="fas fa-handshake text-2xl text-secondary"></i>
             </div>
             <h3 className="text-xl font-bold mb-3">Trusted Partner, Not Just Developers</h3>
             <p className="text-gray-600">

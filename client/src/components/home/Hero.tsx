@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { useEffect, useState } from "react";
+import danitumLogo from "@assets/DANITUM TECHNOLOGIES LOGO PDF_page-0001.jpg";
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -27,6 +28,10 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={`transition-all duration-1000 ease-out ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <div className="mb-8">
+              <img src={danitumLogo} alt="Danitum Technologies" className="h-20 md:h-24 mb-4" />
+              <h4 className="text-white/90 text-sm mb-2">Danitum Technologies Pvt Ltd</h4>
+            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-white drop-shadow-md">
               Transforming Ambitious Ideas Into Impactful Digital Solutions
             </h1>
@@ -47,7 +52,7 @@ const Hero = () => {
           
           <div className={`flex justify-center transition-all duration-1000 delay-300 ease-out ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 blur-xl rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 blur-xl rounded-full"></div>
               <img 
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
                 alt="Team collaborating on software solution" 
