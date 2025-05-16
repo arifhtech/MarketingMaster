@@ -27,11 +27,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={`transition-all duration-1000 ease-out ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-white drop-shadow-md">
-              Building Smarter Software Solutions for Tomorrow's Businesses
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-white drop-shadow-md">
+              Transforming Ambitious Ideas Into Impactful Digital Solutions
             </h1>
             <p className="text-xl md:text-2xl font-medium mb-8 text-white/90">
-              Websites, Apps, Custom AI – Tailored to Your Vision and Goals
+              We help startups and growing businesses unlock their digital potential with world-class web, mobile, and AI-driven solutions—rapidly delivered, robustly engineered, and tailored to market needs.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="bg-white hover:bg-white/90 text-primary px-6 py-3 rounded-xl shadow-lg font-medium transition-all duration-300 inline-flex items-center hover:translate-y-[-2px]">
