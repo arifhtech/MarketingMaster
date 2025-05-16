@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { services } from "@/data/services";
+import danitumLogo from "@assets/DANITUM TECHNOLOGIES LOGO PDF_page-0001.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,8 +40,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-primary">
-              NexGen<span className="text-dark">Solutions</span>
+            <Link href="/" className="flex items-center">
+              <img src={danitumLogo} alt="Danitum Technologies" className="h-10" />
             </Link>
           </div>
           
