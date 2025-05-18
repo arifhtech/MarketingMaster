@@ -62,7 +62,7 @@ const CTABanner = () => {
               href="/contact" 
               className="inline-block bg-white text-primary hover:bg-white/90 font-bold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-xl"
             >
-              Get Started
+              Get a Free Consultation
             </Link>
             <Link 
               href="/case-studies" 

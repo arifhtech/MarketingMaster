@@ -39,10 +39,11 @@ const Navbar = () => {
     <header className={`sticky top-0 z-50 bg-white ${scrolled ? 'shadow-sm' : ''} transition-shadow`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center">
+          <div className="flex flex-col">
             <Link href="/" className="flex items-center">
-              <img src={danitumLogo} alt="Danitum Technologies" className="h-10" />
+              <img src={danitumLogo} alt="Danitum Technologies" className="h-14 mb-1" />
             </Link>
+            <span className="text-xs text-gray-600">Danitum Technologies Pvt Ltd</span>
           </div>
           
           <div className="hidden lg:flex items-center space-x-8">
@@ -81,7 +82,7 @@ const Navbar = () => {
                 Contact
               </Link>
             </nav>
-            <Link href="/contact" className="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-md shadow-sm font-medium transition">
+            <Link href="/contact" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-5 py-2 rounded-md shadow-sm font-medium transition">
               Get a Free Consultation
             </Link>
           </div>
@@ -121,7 +122,7 @@ const Navbar = () => {
             <Link href="/case-studies" className="block font-medium py-2">Case Studies</Link>
             <Link href="/blog" className="block font-medium py-2">Insights</Link>
             <Link href="/contact" className="block font-medium py-2">Contact</Link>
-            <Link href="/contact" className="block bg-primary text-white px-5 py-2 rounded-md text-center font-medium mt-4">
+            <Link href="/contact" className="block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-5 py-2 rounded-md text-center font-medium mt-4">
               Get a Free Consultation
             </Link>
           </div>

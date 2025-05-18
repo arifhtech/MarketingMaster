@@ -29,9 +29,9 @@ const Services = () => {
               {services.map((service) => (
                 <Link key={service.id} href={`/services/${service.slug}`}>
                   <a className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div className={`h-3 bg-${service.iconColor}`}></div>
+                    <div className="h-3 bg-gradient-to-r from-primary to-secondary"></div>
                     <div className="p-6">
-                      <div className={`w-14 h-14 rounded-lg bg-${service.iconColor}/10 text-${service.iconColor} flex items-center justify-center mb-4`}>
+                      <div className="w-14 h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4">
                         <i className={`fas fa-${service.icon} text-xl`}></i>
                       </div>
                       <h3 className="text-xl font-bold mb-3">{service.title}</h3>
@@ -57,8 +57,8 @@ const Services = () => {
                 Our team is ready to help you transform your ideas into impactful digital solutions.
               </p>
               <Link href="/contact">
-                <a className="inline-block bg-white text-primary hover:bg-white/90 px-8 py-3 rounded-lg shadow-lg font-medium transition-all duration-300">
-                  Contact Us
+                <a className="inline-block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-8 py-3 rounded-lg shadow-lg font-medium transition-all duration-300">
+                  Get a Free Consultation
                 </a>
               </Link>
             </div>

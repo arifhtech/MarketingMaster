@@ -43,9 +43,9 @@ const Hero = () => {
                 <span>Get a Free Consultation</span>
                 <i className="fas fa-arrow-right ml-2"></i>
               </Link>
-              <Link href="/#services" className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl shadow-md font-medium border border-white/20 transition-all duration-300 inline-flex items-center hover:translate-y-[-2px]">
+              <Link href="/services" className="bg-gradient-to-r from-teal-400/30 to-teal-300/30 hover:bg-white/20 text-white px-6 py-3 rounded-xl shadow-md font-medium border border-white/20 transition-all duration-300 inline-flex items-center hover:translate-y-[-2px]">
                 <span>Explore Our Services</span>
-                <i className="fas fa-chevron-down ml-2"></i>
+                <i className="fas fa-chevron-right ml-2"></i>
               </Link>
             </div>
           </div>
@@ -66,7 +66,11 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white/80 animate-bounce">
         <span className="text-sm font-medium mb-2">Scroll Down</span>
-        <i className="fas fa-chevron-down"></i>
+        <div className="flex justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </div>
       </div>
     </section>
   );

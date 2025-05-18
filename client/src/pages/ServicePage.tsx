@@ -126,7 +126,7 @@ const ServicePage = () => {
                   <Link key={relatedService.id} href={`/services/${relatedService.slug}`}>
                     <a className="bg-white rounded-xl shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1">
                       <div className="p-6">
-                        <div className={`w-12 h-12 rounded-lg bg-${relatedService.iconColor}/10 text-${relatedService.iconColor} flex items-center justify-center mb-4`}>
+                        <div className="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4">
                           <i className={`fas fa-${relatedService.icon} text-lg`}></i>
                         </div>
                         <h3 className="text-xl font-bold mb-2">{relatedService.title}</h3>
