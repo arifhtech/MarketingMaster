@@ -8,14 +8,20 @@ const Blog = () => {
     <>
       <Helmet>
         <title>Blog & Insights | NexGen Solutions</title>
-        <meta name="description" content="Stay updated on technology, innovation, and trends shaping the future of software." />
+        <meta
+          name="description"
+          content="Stay updated on technology, innovation, and trends shaping the future of software."
+        />
       </Helmet>
-      <main>
+      <main id="blogs">
         <div className="bg-gradient-to-r from-dark to-dark/90 text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Blog & Insights</h1>
-            <p className="text-xl text-gray-200 max-w-3xl">
-              Stay updated on technology, innovation, and trends shaping the future of software.
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Blog & Insights
+            </h1>
+            <p className="text-xl text-gray-500 max-w-3xl">
+              Stay updated on technology, innovation, and trends shaping the
+              future of software.
             </p>
           </div>
         </div>
