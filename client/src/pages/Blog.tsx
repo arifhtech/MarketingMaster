@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Blog & Insights | NexGen Solutions</title>
+        <title>Blog & Insights | Danitum Technologies</title>
         <meta
           name="description"
           content="Stay updated on technology, innovation, and trends shaping the future of software."

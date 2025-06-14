@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | NexGen Solutions</title>
+        <title>Contact Us | Danitum Technologies</title>
         <meta
           name="description"
           content="Ready to start your project? Contact us for a free consultation."

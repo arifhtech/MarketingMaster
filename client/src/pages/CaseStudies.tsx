@@ -7,7 +7,7 @@ const CaseStudies = () => {
   return (
     <>
       <Helmet>
-        <title>Case Studies | NexGen Solutions</title>
+        <title>Case Studies | Danitum Technologies</title>
         <meta
           name="description"
           content="See how we've helped startups, enterprises, and everything in between achieve their digital goals."

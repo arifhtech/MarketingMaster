@@ -29,7 +29,7 @@ const CaseStudyDetail = () => {
   return (
     <>
       <Helmet>
-        <title>{caseStudy.title} Case Study | NexGen Solutions</title>
+        <title>{caseStudy.title} Case Study | Danitum Technologies</title>
         <meta name="description" content={caseStudy.description} />
       </Helmet>
       <main>

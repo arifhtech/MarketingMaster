@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | NexGen Solutions</title>
+        <title>About Us | Danitum Technologies</title>
         <meta
           name="description"
           content="We are a software company passionate about building scalable, intelligent, and user-focused digital products."
@@ -29,7 +29,7 @@ const About = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Founded in 2013, NexGen Solutions began with a simple mission:
+                  Danitum Technologies began with a simple mission:
                   to help businesses leverage technology for sustainable growth.
                   Our team of passionate developers, designers, and strategists
                   has grown from a small startup to a versatile digital partner

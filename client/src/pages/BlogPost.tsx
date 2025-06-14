@@ -26,7 +26,7 @@ const BlogPost = () => {
   return (
     <>
       <Helmet>
-        <title>{post.title} | NexGen Solutions Blog</title>
+        <title>{post.title} | Danitum Technologies Blog</title>
         <meta name="description" content={post.excerpt} />
       </Helmet>
       <main>
@@ -121,7 +121,7 @@ const BlogPost = () => {
                   <div className="ml-4">
                     <h4 className="font-bold">About {post.author}</h4>
                     <p className="text-gray-600 text-sm">
-                      {post.author} is a technology expert at NexGen Solutions with over 10 years of experience
+                      {post.author} is a technology expert at Danitum Technologies with over 10 years of experience
                       in software development and digital strategy.
                     </p>
                   </div>

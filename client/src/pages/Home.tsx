@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Helmet>
         <title>
-          NexGen Solutions | Transforming Ambitious Ideas Into Digital Solutions
+          Danitum Technologies | Transforming Ambitious Ideas Into Digital Solutions
         </title>
         <meta
           name="description"
