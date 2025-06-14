@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { apiRequest } from "@/lib/queryClient";
+import { contactSubmissionSchema, type ContactSubmission } from "@/lib/schema";
 import { useToast } from "@/hooks/use-toast";
 import {
   Form,
@@ -24,13 +24,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
-  email: z.string().email({ message: "Please enter a valid email address" }),
-  phone: z.string().optional(),
-  projectType: z.string().min(1, { message: "Please select a project type" }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters" }),
-  agreement: z.boolean().refine((val) => val === true, {
+const formSchema = contactSubmissionSchema.extend({
+  agreement: z.boolean().refine((val: boolean) => val === true, {
     message: "You must agree to the terms",
   }),
 });
@@ -57,7 +52,13 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      await apiRequest("POST", "/api/contact", data);
+      // Store in localStorage instead of API call
+      const submissions = JSON.parse(localStorage.getItem('contactSubmissions') || '[]');
+      submissions.push({
+        ...data,
+        timestamp: new Date().toISOString()
+      });
+      localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
       
       toast({
         title: "Message sent!",
@@ -201,10 +202,7 @@ const ContactForm = () => {
               Sending...
             </>
           ) : (
-            <>
-              <span>Send Message</span>
-              <i className="fas fa-paper-plane ml-2"></i>
-            </>
+            "Send Message"
           )}
         </Button>
       </form>
