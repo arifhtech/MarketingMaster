@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 // Import client logos
-import acronLogo from "@assets/image_1747405605742.png";
-import kcicLogo from "@assets/image_1747405651074.png";
-import mangeshLogo from "@assets/image_1747405675013.png";
+import acronLogo from "@assets/acron-logo.png";
+import kcicLogo from "@assets/kcic-logo.png";
+import mangeshLogo from "@assets/mangesh-logo.png";
 
 const TrustBadges = () => {
   const [isVisible, setIsVisible] = useState(false);

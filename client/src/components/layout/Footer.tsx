@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { services } from "@/data/services";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import danitumLogo from "@assets/DANITUM TECHNOLOGIES LOGO PDF_page-0001.jpg";
+import danitumLogo from "@assets/danitum-logo.jpg";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
