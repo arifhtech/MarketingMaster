@@ -6,7 +6,7 @@ import kcicLogo from "@assets/kcic-logo.png";
 import mangeshLogo from "@assets/mangesh-logo.png";
 import sriLogo from "@assets/sri_logo.png";
 import sreLogo from "@assets/sre.png";
-import techinAgriLogo from "@assets/Techin Agri.png";
+import techinAgriLogo from "@assets/Techin-Agri.png";
 import Marquee from "react-fast-marquee";
 
 const TrustBadges = () => {
@@ -48,11 +48,6 @@ const TrustBadges = () => {
       logo: mangeshLogo,
       width: 140,
     },
-    // {
-    //   name: "Sri",
-    //   logo: sriLogo,
-    //   width: 140,
-    // },
     {
       name: "Sre",
       logo: sreLogo,
@@ -100,20 +95,7 @@ const TrustBadges = () => {
                   className="h-auto object-contain"
                   style={{ width: `${client?.width}px` }}
                 />
-              ) : null
-              // <div className="flex items-center justify-center flex-col md:flex-row">
-              //   {client?.icon && (
-              //     <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-3 mb-2 md:mb-0">
-              //       <i
-              //         className={`fas ${client?.icon} text-primary text-xl`}
-              //       ></i>
-              //     </div>
-              //   )}
-              //   <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-              //     {client?.name}
-              //   </span>
-              // </div>
-              }
+              ) : null}
             </div>
           ))}
         </div>
