@@ -6,7 +6,7 @@ import kcicLogo from "@assets/kcic-logo.png";
 import mangeshLogo from "@assets/mangesh-logo.png";
 import sriLogo from "@assets/sri_logo.png";
 import sreLogo from "@assets/sre.png";
-import techinAgriLogo from "@assets/Techin-Agri.png";
+import techinAgriLogo from "@assets/Techin.png";
 import Marquee from "react-fast-marquee";
 
 const TrustBadges = () => {
