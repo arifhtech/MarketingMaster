@@ -1,11 +1,10 @@
 import type { Express } from "express";
-import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSubmissionSchema, insertNewsletterSubscriberSchema } from "@shared/schema";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
 
-export async function registerRoutes(app: Express): Promise<Server> {
+export async function registerRoutes(app: Express): Promise<void> {
   // Contact form submissions
   app.post("/api/contact", async (req, res) => {
     try {
@@ -71,7 +70,4 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.status(500).json({ message: "Failed to subscribe to newsletter" });
     }
   });
-
-  const httpServer = createServer(app);
-  return httpServer;
 }
