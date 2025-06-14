@@ -83,7 +83,7 @@ const TrustBadges = () => {
         <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 md:gap-x-20">
           {clients.map((client, index) => (
             <div
-              key={client.name}
+              key={client?.name}
               className={`grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-110 ${
                 isVisible
                   ? "opacity-70 translate-y-0"
@@ -93,22 +93,22 @@ const TrustBadges = () => {
                 transitionDelay: `${index * 150}ms`,
               }}
             >
-              {client.logo ? (
+              {client?.logo ? (
                 <img
-                  src={client.logo}
-                  alt={`${client.name} logo`}
+                  src={client?.logo}
+                  alt={`${client?.name} logo`}
                   className="h-auto object-contain"
-                  style={{ width: `${client.width}px` }}
+                  style={{ width: `${client?.width}px` }}
                 />
               ) : (
                 <div className="flex items-center justify-center flex-col md:flex-row">
                   <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-3 mb-2 md:mb-0">
                     <i
-                      className={`fas ${client.icon} text-primary text-xl`}
+                      className={`fas ${client?.icon} text-primary text-xl`}
                     ></i>
                   </div>
                   <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-                    {client.name}
+                    {client?.name}
                   </span>
                 </div>
               )}
