@@ -101,7 +101,7 @@ const ServicePage = () => {
                 
                 <div className="mt-8">
                   <Link href="/contact">
-                    <a className="w-full block text-center bg-primary hover:bg-primary/90 text-white font-medium py-4 rounded-xl transition-colors">
+                    <a className="w-full block text-center bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-medium py-4 rounded-xl transition-all duration-300 hover:translate-y-[-2px] shadow-lg">
                       Request a Free Consultation
                     </a>
                   </Link>

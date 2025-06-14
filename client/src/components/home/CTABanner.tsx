@@ -60,13 +60,13 @@ const CTABanner = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="/contact" 
-              className="inline-block bg-white text-primary hover:bg-white/90 font-bold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-xl"
+              className="inline-block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-xl"
             >
               Get a Free Consultation
             </Link>
             <Link 
               href="/case-studies" 
-              className="inline-block bg-transparent border-2 border-white/30 text-white hover:bg-white/10 font-bold px-8 py-4 rounded-xl shadow-md transition-all duration-300 hover:translate-y-[-2px]"
+              className="inline-block bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-xl shadow-md transition-all duration-300 hover:translate-y-[-2px] border border-white/20"
             >
               View Our Work
             </Link>

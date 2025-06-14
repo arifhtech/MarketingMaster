@@ -131,7 +131,7 @@ const Navbar = () => {
             </nav>
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-5 py-2 rounded-md shadow-sm font-medium transition"
+              className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-5 py-2 rounded-xl shadow-sm font-medium transition-all duration-300 hover:translate-y-[-2px]"
             >
               Get a Free Consultation
             </Link>
@@ -196,7 +196,7 @@ const Navbar = () => {
             </Link>
             <Link
               href="/contact"
-              className="block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-5 py-2 rounded-md text-center font-medium mt-4"
+              className="block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-5 py-2 rounded-xl text-center font-medium mt-4 transition-all duration-300 hover:translate-y-[-2px]"
             >
               Get a Free Consultation
             </Link>

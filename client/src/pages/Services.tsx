@@ -57,7 +57,7 @@ const Services = () => {
                 Our team is ready to help you transform your ideas into impactful digital solutions.
               </p>
               <Link href="/contact">
-                <a className="inline-block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-8 py-3 rounded-lg shadow-lg font-medium transition-all duration-300">
+                <a className="inline-block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-8 py-3 rounded-xl shadow-lg font-medium transition-all duration-300 hover:translate-y-[-2px]">
                   Get a Free Consultation
                 </a>
               </Link>

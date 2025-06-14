@@ -50,14 +50,14 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/contact"
-                className="bg-white hover:bg-white/90 text-primary px-6 py-3 rounded-xl shadow-lg font-medium transition-all duration-300 inline-flex items-center hover:translate-y-[-2px]"
+                className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-6 py-3 rounded-xl shadow-lg font-medium transition-all duration-300 inline-flex items-center hover:translate-y-[-2px]"
               >
                 <span>Get a Free Consultation</span>
                 <i className="fas fa-arrow-right ml-2"></i>
               </Link>
               <Link
                 href="/services"
-                className="bg-gradient-to-r from-teal-400/30 to-teal-300/30 hover:bg-white/20 text-white px-6 py-3 rounded-xl shadow-md font-medium border border-white/20 transition-all duration-300 inline-flex items-center hover:translate-y-[-2px]"
+                className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl shadow-md font-medium border border-white/20 transition-all duration-300 inline-flex items-center hover:translate-y-[-2px]"
               >
                 <span>Explore Our Services</span>
                 <i className="fas fa-chevron-right ml-2"></i>
