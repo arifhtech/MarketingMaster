@@ -102,11 +102,13 @@ const TrustBadges = () => {
                 />
               ) : (
                 <div className="flex items-center justify-center flex-col md:flex-row">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-3 mb-2 md:mb-0">
-                    <i
-                      className={`fas ${client?.icon} text-primary text-xl`}
-                    ></i>
-                  </div>
+                  {client?.icon && (
+                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-3 mb-2 md:mb-0">
+                      <i
+                        className={`fas ${client?.icon} text-primary text-xl`}
+                      ></i>
+                    </div>
+                  )}
                   <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
                     {client?.name}
                   </span>
