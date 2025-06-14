@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 import acronLogo from "@assets/acron-logo.png";
 import kcicLogo from "@assets/kcic-logo.png";
 import mangeshLogo from "@assets/mangesh-logo.png";
+import sriLogo from "@assets/sri_logo.png";
+import sreLogo from "@assets/sre.png";
+import techinAgriLogo from "@assets/Techin Agri.png";
+import Marquee from "react-fast-marquee";
 
 const TrustBadges = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,38 +33,42 @@ const TrustBadges = () => {
 
   // Client logos configuration
   const clients = [
-    { 
-      name: "ACRON", 
+    {
+      name: "ACRON",
       logo: acronLogo,
-      width: 160
+      width: 160,
     },
-    { 
-      name: "KCIC", 
+    {
+      name: "KCIC",
       logo: kcicLogo,
-      width: 180
+      width: 180,
     },
-    { 
-      name: "Mangesh Gaonkar", 
+    {
+      name: "Mangesh Gaonkar",
       logo: mangeshLogo,
-      width: 140
+      width: 140,
     },
-    // Adding two additional logos with Font Awesome icons
-    { 
-      name: "FutureTech", 
-      icon: "fa-rocket",
-      width: 0
+    // {
+    //   name: "Sri",
+    //   logo: sriLogo,
+    //   width: 140,
+    // },
+    {
+      name: "Sre",
+      logo: sreLogo,
+      width: 140,
     },
-    { 
-      name: "DataSphere", 
-      icon: "fa-database",
-      width: 0
-    }
+    {
+      name: "Techin Agri",
+      logo: techinAgriLogo,
+      width: 140,
+    },
   ];
 
   return (
     <section id="trust-badges" className="py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div 
+        <div
           className={`text-center mb-12 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
@@ -71,29 +79,33 @@ const TrustBadges = () => {
             <span className="h-px w-16 bg-gradient-to-r from-primary to-primary/30 ml-4 hidden md:block"></span>
           </p>
         </div>
-        
+
         <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 md:gap-x-20">
           {clients.map((client, index) => (
-            <div 
-              key={client.name} 
+            <div
+              key={client.name}
               className={`grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-110 ${
-                isVisible ? "opacity-70 translate-y-0" : "opacity-0 translate-y-4"
+                isVisible
+                  ? "opacity-70 translate-y-0"
+                  : "opacity-0 translate-y-4"
               }`}
-              style={{ 
+              style={{
                 transitionDelay: `${index * 150}ms`,
               }}
             >
               {client.logo ? (
-                <img 
-                  src={client.logo} 
-                  alt={`${client.name} logo`} 
+                <img
+                  src={client.logo}
+                  alt={`${client.name} logo`}
                   className="h-auto object-contain"
                   style={{ width: `${client.width}px` }}
                 />
               ) : (
                 <div className="flex items-center justify-center flex-col md:flex-row">
                   <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-3 mb-2 md:mb-0">
-                    <i className={`fas ${client.icon} text-primary text-xl`}></i>
+                    <i
+                      className={`fas ${client.icon} text-primary text-xl`}
+                    ></i>
                   </div>
                   <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
                     {client.name}
@@ -103,8 +115,8 @@ const TrustBadges = () => {
             </div>
           ))}
         </div>
-        
-        <div 
+
+        {/* <div
           className={`flex justify-center mt-16 transition-all duration-700 delay-500 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
@@ -127,7 +139,7 @@ const TrustBadges = () => {
               <span>Award Winning</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -16,6 +16,7 @@ export interface Service {
 }
 
 export interface CaseStudy {
+  duration: string;
   id: number;
   title: string;
   description: string;
@@ -24,6 +25,10 @@ export interface CaseStudy {
   client: string;
   image: string;
   technologies: string[];
+  services: string[];
+  challenge: string[];
+  solution: string[];
+  impact: string[];
 }
 
 export interface BlogPost {

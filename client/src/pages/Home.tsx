@@ -13,8 +13,13 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>NexGen Solutions | Transforming Ambitious Ideas Into Digital Solutions</title>
-        <meta name="description" content="We help startups and growing businesses unlock their digital potential with world-class web, mobile, and AI-driven solutions. Get a free consultation today." />
+        <title>
+          NexGen Solutions | Transforming Ambitious Ideas Into Digital Solutions
+        </title>
+        <meta
+          name="description"
+          content="We help startups and growing businesses unlock their digital potential with world-class web, mobile, and AI-driven solutions. Get a free consultation today."
+        />
       </Helmet>
       <main>
         <Hero />
@@ -23,7 +28,7 @@ const Home = () => {
         <Services />
         <WhyChooseUs />
         <CaseStudiesSection />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <CTABanner />
         <BlogSection />
       </main>

@@ -10,7 +10,7 @@ const Footer = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email) {
       toast({
         title: "Error",
@@ -25,7 +25,7 @@ const Footer = () => {
       title: "Success!",
       description: "You've been subscribed to our newsletter.",
     });
-    
+
     setEmail("");
   };
 
@@ -35,34 +35,50 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="mb-6">
-              <img src={danitumLogo} alt="Danitum Technologies" className="h-16" />
+              <img
+                src={danitumLogo}
+                alt="Danitum Technologies"
+                className="h-16"
+              />
             </div>
             <p className="text-gray-400 mb-6">
               Transforming ambitious ideas into impactful digital solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary transition">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary transition"
+              >
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary transition"
+              >
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary transition"
+              >
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary transition"
+              >
                 <i className="fab fa-github"></i>
               </a>
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-bold mb-6">Services</h4>
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.slug}>
-                  <Link 
-                    href={`/services/${service.slug}`} 
+                  <Link
+                    href={`/services/${service.slug}`}
                     className="text-gray-400 hover:text-primary transition"
                   >
                     {service.title}
@@ -71,43 +87,61 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-bold mb-6">Company</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-primary transition">
+                <Link
+                  href="/about"
+                  className="text-gray-400 hover:text-primary transition"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/case-studies" className="text-gray-400 hover:text-primary transition">
+                <Link
+                  href="/case-studies"
+                  className="text-gray-400 hover:text-primary transition"
+                >
                   Case Studies
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-primary transition">
+                <Link
+                  href="/blog"
+                  className="text-gray-400 hover:text-primary transition"
+                >
                   Blog & Insights
                 </Link>
               </li>
               <li>
-                <Link href="/#" className="text-gray-400 hover:text-primary transition">
+                <Link
+                  href="/#"
+                  className="text-gray-400 hover:text-primary transition"
+                >
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/#" className="text-gray-400 hover:text-primary transition">
+                <Link
+                  href="/#"
+                  className="text-gray-400 hover:text-primary transition"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/#" className="text-gray-400 hover:text-primary transition">
+                <Link
+                  href="/#"
+                  className="text-gray-400 hover:text-primary transition"
+                >
                   Terms of Service
                 </Link>
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-bold mb-6">Contact Us</h4>
             <ul className="space-y-3 text-gray-400 mb-6">
@@ -124,20 +158,20 @@ const Footer = () => {
                 <span>info@danitum.com</span>
               </li>
             </ul>
-            
+
             <h4 className="text-lg font-bold mb-4">Newsletter</h4>
             <form className="space-y-3" onSubmit={handleSubmit}>
               <div>
-                <input 
-                  type="email" 
-                  placeholder="Your email address" 
+                <input
+                  type="email"
+                  placeholder="Your email address"
                   className="w-full px-4 py-3 rounded-md bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-primary transition"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-4 rounded-md transition"
               >
                 Subscribe
@@ -145,20 +179,30 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Danitum Technologies Pvt Ltd. All rights reserved.
+              © {new Date().getFullYear()} Danitum Technologies. All rights
+              reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/#" className="text-gray-400 hover:text-primary text-sm transition">
+              <Link
+                href="/#"
+                className="text-gray-400 hover:text-primary text-sm transition"
+              >
                 Privacy Policy
               </Link>
-              <Link href="/#" className="text-gray-400 hover:text-primary text-sm transition">
+              <Link
+                href="/#"
+                className="text-gray-400 hover:text-primary text-sm transition"
+              >
                 Terms of Service
               </Link>
-              <Link href="/#" className="text-gray-400 hover:text-primary text-sm transition">
+              <Link
+                href="/#"
+                className="text-gray-400 hover:text-primary text-sm transition"
+              >
                 Sitemap
               </Link>
             </div>
