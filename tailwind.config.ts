@@ -99,6 +99,14 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "blob": "blob 7s infinite",
       },
+      utilities: {
+        '.animation-delay-2000': {
+          'animation-delay': '2s',
+        },
+        '.animation-delay-4000': {
+          'animation-delay': '4s',
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],

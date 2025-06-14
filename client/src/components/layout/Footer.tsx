@@ -115,30 +115,6 @@ const Footer = () => {
                   Blog & Insights
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/#"
-                  className="text-gray-400 hover:text-primary transition"
-                >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#"
-                  className="text-gray-400 hover:text-primary transition"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#"
-                  className="text-gray-400 hover:text-primary transition"
-                >
-                  Terms of Service
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -187,18 +163,6 @@ const Footer = () => {
               reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link
-                href="/#"
-                className="text-gray-400 hover:text-primary text-sm transition"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="/#"
-                className="text-gray-400 hover:text-primary text-sm transition"
-              >
-                Terms of Service
-              </Link>
               <Link
                 href="/#"
                 className="text-gray-400 hover:text-primary text-sm transition"

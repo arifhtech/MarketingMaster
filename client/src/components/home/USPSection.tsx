@@ -113,12 +113,10 @@ const USPSection = () => {
               <i className="fas fa-chart-line text-2xl text-primary"></i>
             </div>
             <h3 className="text-xl font-bold mb-3">
-              Results, Not Just Deliverables
+              Data-Driven Excellence
             </h3>
             <p className="text-gray-600">
-              We stand out by deeply learning each client's goals, personalizing
-              our solutions, and obsessing over measurable outcomes—traffic,
-              conversions, and revenue.
+              We leverage cutting-edge analytics and AI to transform raw data into actionable insights, driving measurable business growth through intelligent automation and predictive modeling.
             </p>
           </div>
 
