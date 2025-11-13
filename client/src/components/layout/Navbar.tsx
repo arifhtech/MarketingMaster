@@ -142,66 +142,87 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile menu */}
-        <div
-          className={`lg:hidden ${
-            isOpen ? "block" : "hidden"
-          } transition-all duration-300 ease-in-out`}
-        >
-          <div className="py-4 space-y-4 border-t border-gray-200">
-            <Link href="/" className="block font-medium py-2">
-              Home
-            </Link>
-            <Link href="/about" className="block font-medium py-2">
-              About
-            </Link>
+        {/* Mobile drawer overlay */}
+        {isOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
+            onClick={toggleMenu}
+          />
+        )}
 
-            <div className="relative">
-              <button
-                onClick={toggleServices}
-                className="flex w-full items-center justify-between font-medium py-2"
-              >
-                Services
-                <i
-                  className={`fas fa-chevron-${
-                    servicesOpen ? "up" : "down"
-                  } text-xs`}
-                ></i>
+        {/* Mobile drawer */}
+        <div
+          className={`fixed top-0 left-0 h-full w-80 bg-white shadow-xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
+          <div className="p-6">
+            <div className="flex justify-between items-center mb-8">
+              <img
+                src={danitumLogo}
+                alt="Danitum Technologies"
+                className="h-8"
+              />
+              <button onClick={toggleMenu} className="focus:outline-none">
+                <i className="fas fa-times text-xl"></i>
               </button>
-              <div
-                className={`${
-                  servicesOpen ? "block" : "hidden"
-                } pl-4 pt-2 space-y-2`}
-              >
-                {services.map((service) => (
-                  <Link
-                    key={service.slug}
-                    href={`/services/${service.slug}`}
-                    className="block py-2 text-gray-700"
-                  >
-                    {service.title}
-                  </Link>
-                ))}
-              </div>
             </div>
 
-            <Link href="/case-studies" className="block font-medium py-2">
-              Case Studies
-            </Link>
-            <Link href="/blog" className="block font-medium py-2">
-              Insights
-            </Link>
-            <Link href="/contact" className="block font-medium py-2">
-              Contact
-            </Link>
-            <Link
-              href="/contact"
-              className="block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-5 py-2 rounded-xl text-center font-medium mt-4 transition-all duration-300 hover:translate-y-[-2px]"
-            >
-              Get a Free Consultation
-            </Link>
-          </div>
-        </div>
+           <nav className="space-y-4">
+             <Link href="/" className="block font-medium py-2">
+               Home
+             </Link>
+             <Link href="/about" className="block font-medium py-2">
+               About
+             </Link>
+
+             <div className="relative">
+               <button
+                 onClick={toggleServices}
+                 className="flex w-full items-center justify-between font-medium py-2"
+               >
+                 Services
+                 <i
+                   className={`fas fa-chevron-${
+                     servicesOpen ? "up" : "down"
+                   } text-xs`}
+                 ></i>
+               </button>
+               <div
+                 className={`${
+                   servicesOpen ? "block" : "hidden"
+                 } pl-4 pt-2 space-y-2`}
+               >
+                 {services.map((service) => (
+                   <Link
+                     key={service.slug}
+                     href={`/services/${service.slug}`}
+                     className="block py-2 text-gray-700"
+                   >
+                     {service.title}
+                   </Link>
+                 ))}
+               </div>
+             </div>
+
+             <Link href="/case-studies" className="block font-medium py-2">
+               Case Studies
+             </Link>
+             <Link href="/blog" className="block font-medium py-2">
+               Insights
+             </Link>
+             <Link href="/contact" className="block font-medium py-2">
+               Contact
+             </Link>
+             <Link
+               href="/contact"
+               className="block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-5 py-2 rounded-xl text-center font-medium mt-4 transition-all duration-300 hover:translate-y-[-2px]"
+             >
+               Get a Free Consultation
+             </Link>
+           </nav>
+         </div>
+       </div>
       </div>
     </header>
   );

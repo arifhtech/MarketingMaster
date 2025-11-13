@@ -4,11 +4,27 @@ export default {
   darkMode: ["class"],
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: {
+      sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontSize: {
+        'h1': ['clamp(48px, 5vw, 64px)', { lineHeight: '1.1', fontWeight: '700' }],
+        'h2': ['clamp(36px, 4vw, 48px)', { lineHeight: '1.2', fontWeight: '600' }],
+        'h3': ['clamp(24px, 3vw, 32px)', { lineHeight: '1.3', fontWeight: '600' }],
+        'body': ['clamp(16px, 2vw, 18px)', { lineHeight: '1.6', fontWeight: '400' }],
       },
       colors: {
         background: "hsl(var(--background))",
@@ -61,6 +77,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        'clickup-gradient': 'linear-gradient(135deg, #1EACBA 0%, #1D3748 100%)',
+        'clickup-gradient-reverse': 'linear-gradient(135deg, #1D3748 0%, #1EACBA 100%)',
+        'clickup-gradient-radial': 'radial-gradient(circle, #1EACBA 0%, #1D3748 100%)',
       },
       keyframes: {
         "accordion-down": {
