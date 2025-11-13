@@ -49,25 +49,7 @@ const Footer = () => {
                 href="#"
                 className="text-gray-400 hover:text-primary transition"
               >
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition"
-              >
                 <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition"
-              >
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition"
-              >
-                <i className="fab fa-github"></i>
               </a>
             </div>
           </div>
@@ -131,7 +113,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope mr-3"></i>
-                <span>info@danitum.com</span>
+                <span>arif@danitum.com</span>
               </li>
             </ul>
 
