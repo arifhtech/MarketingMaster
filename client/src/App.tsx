@@ -13,6 +13,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import BlogPost from "./pages/BlogPost";
 import CaseStudyDetail from "./pages/CaseStudyDetail";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function Router() {
   return (
