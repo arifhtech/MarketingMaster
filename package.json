@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "clean": "rimraf dist",
+    "clean": "rm -rf dist",
     "prebuild": "npm run clean"
   },
   "dependencies": {
