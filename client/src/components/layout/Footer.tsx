@@ -152,7 +152,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope mr-3"></i>
-                <span>info@danitum.com</span>
+                <span>arif@danitum.com</span>
               </li>
             </ul>
 
