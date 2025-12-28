@@ -1,0 +1,110 @@
+Fantastic—thanks for sharpening the focus! You want a Product Requirements Document (PRD) that covers both a robust company website and a high-converting landing page. I’ll lean into clear, actionable requirements for your web development/design team, with emphasis on lead capture, credibility, and great UX.
+
+To give you the best possible PRD, I'll need a few extra details. (Feel free to answer now, or I'll make reasonable assumptions and mention where you should fill in the blanks.)
+
+Primary audience: B2B, B2C, or a specific sector (tech startups, SMEs, etc.)?
+Main conversion action: Is it contact form submission, demo request, email signup, quote request?
+Key differentiators: What makes your company or solution unique?
+Must-have integrations: (Email automation, analytics, chatbots, CRM, etc.)
+Design requirements: (Brand colors, typography, tone, accessibility?)
+Deadline/urgency: (Are you aiming for an MVP sprint, or a pixel-perfect launch?)
+Here’s how I’ll structure your PRD:
+[Product/Feature Name: Company Website + High-Converting Landing Page]
+TL;DR:
+Build a dynamic and visually polished website—including a dedicated, conversion-optimized landing page—to establish brand credibility, showcase services, and drive high-quality leads. Targeted at [insert audience type], the site delivers compelling content, seamless UX, and streamlined lead capture.
+
+Goals
+Business Goals
+
+Increase qualified online leads by [X]% within [Y] months.
+Improve brand perception and trust within the target vertical.
+Enable simple site management and rapid updates (via CMS).
+Support targeted marketing campaigns via the landing page.
+User Goals
+
+Quickly understand company offerings and value.
+Discover relevant case studies/portfolio.
+Easily contact/schedule demo or request a quote.
+Find trust signals (social proof, testimonials, certifications).
+Non-Goals
+
+No e-commerce/checkout (unless specified later).
+No multi-language support in v1.
+No deep account/user portal on v1.
+User Stories
+Prospective Client
+
+As a potential client, I want to scan the landing page and instantly "get" the value, so I feel motivated to contact the company.
+As a busy manager, I want to see relevant case studies, so I can decide if your team has credible experience.
+As a researcher, I want frictionless navigation across services, so I don’t waste time searching key info.
+Internal Admin
+
+As a marketer, I want to update content and publish new blog posts/landing pages without calling an engineer.
+Functional Requirements
+Website Core (Priority: Highest)
+
+Fast-loading responsive design across devices.
+Clear, accessible navigation with SEO-optimized structure:
+Home, About, Services (with nested sub-pages), Portfolio, Insights/Blog, Contact
+Social proof: testimonials, logos, relevant certifications.
+Analytics integration (e.g., Google Analytics, Hotjar).
+Lead forms: contact, quote, newsletter signup (integrated with email/CRM tools).
+Landing Page (Priority: Highest)
+
+Striking headline, subheadline, and benefit-driven copy.
+Above-the-fold form with minimal required fields.
+Trust signals: testimonials, badges, client logos.
+Custom tracking for campaign attribution (UTM tags, pixel).
+Clear, single primary CTA.
+CMS Integration (Priority: High)
+
+Simple WYSIWYG editor for marketing team.
+Easy creation/duplication of new landing pages/case studies.
+Blog/Insights/Portfolio (Priority: Medium)
+
+Categories/tags for post filtering.
+Option for featured articles/case studies on the home page.
+Accessibility and Performance (Priority: High)
+
+WCAG 2.1 AA accessibility.
+PageSpeed score 90+ on mobile and desktop.
+User Experience
+Entry Point & First-Time User Experience
+
+Users land on a home or campaign landing page, see value props & CTA immediately.
+For landing page: headline, bullet benefits, form above fold. Scroll = deeper content, visual proof, FAQs.
+For main site: sticky nav, easy to find services & contact info.
+Core Steps
+
+Arrive on landing page → Scan headline/value prop → Trust badges visible.
+Scroll for social proof, case studies, FAQs.
+Complete lead form (minimal friction: name, email, optional message).
+On submit: instant success/thank you w/ next steps (calendar booking or confirmation).
+For main site: browse sections, read portfolio/blog, use contact form.
+Advanced Features & Edge Cases
+
+Spam prevention (captcha or honeypot).
+Form error states (highlight missing/invalid fields, helpful hinting).
+Easy fallback for “contact us” if landing form fails.
+Mobile-first navigation.
+UI/UX Highlights
+
+Brand-aligned color palette, consistent CTA colors.
+Large, legible fonts; clear button hierarchy.
+Focus on whitespace and conversion "flow".
+Alt tags and semantic markup for screen readers.
+Narrative
+[Example]
+Frustrated after endless agency websites with bland features and cluttered forms, Lisa (a startup CTO) clicks your paid ad and lands on a sleek, to-the-point page. The headline speaks directly to her needs, testimonials give her confidence, and a short, no-BS form promises quick follow-up—she submits, receives a warm thank you message, and books a call the same day. Two weeks later, she's a client—impressed by credibility, speed, and delightful UX.
+
+Success Metrics
+User-Centric
+
+Bounce rate on landing page < [30]%
+Form completion rate > [15]%
+Avg. time-on-site > [90]s
+Business
+
+daily/weekly qualified lead submissions from landing page.
+booked discovery/demo calls via thank you page.
+Growth in newsletter/blog signups.
