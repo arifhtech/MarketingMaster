@@ -101,16 +101,12 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="lg:col-span-1">
+         <div className="lg:col-span-1">
             <h4 className="text-base font-semibold mb-4 text-white">Get in Touch</h4>
             <ul className="space-y-2 text-gray-400 mb-4 text-sm">
               <li className="flex items-start">
                 <i className="fas fa-map-marker-alt mt-0.5 mr-2 text-primary"></i>
-                <span>Office 178/206 Sanquelim - Goa, 403505</span>
-              </li>
-              <li className="flex items-center">
-                <i className="fas fa-phone mr-2 text-primary"></i>
-                <span>+91 1234567890</span>
+                <span>Office 178/206,Narayan Nagar Honda,Sanquelim - Goa, 403505</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope mr-2 text-primary"></i>
