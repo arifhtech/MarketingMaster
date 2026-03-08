@@ -183,7 +183,19 @@ const ContactForm = () => {
               </FormControl>
               <div className="space-y-1 leading-none">
                 <FormLabel>
-                  I agree to the <a href="#" className="text-primary hover:underline">Privacy Policy</a> and <a href="#" className="text-primary hover:underline">Terms of Service</a>
+                  I agree to the{" "}
+                  <a
+                    href="/privacy-policy"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    Privacy Policy
+                  </a>{" "}
+                  and{" "}
+                  <a href="#" className="text-primary hover:underline">
+                    Terms of Service
+                  </a>
                 </FormLabel>
                 <FormMessage />
               </div>

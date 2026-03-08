@@ -142,12 +142,14 @@ const Footer = () => {
               reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link
+              <a
                 href="/privacy-policy"
+                target="_blank"
+                rel="noreferrer"
                 className="text-gray-400 hover:text-primary text-sm transition"
               >
                 Privacy Policy
-              </Link>
+              </a>
               <Link
                 href="/#"
                 className="text-gray-400 hover:text-primary text-sm transition"
